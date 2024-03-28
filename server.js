@@ -3,6 +3,10 @@ const app = express();
 require('dotenv').config();
 const mysql = require('mysql2');
 const axios = require('axios')
+const cors = require('cors');
+
+app.use(cors());
+
 
 const connection = mysql.createConnection({
     host: process.env.MYSQL_HOST,
