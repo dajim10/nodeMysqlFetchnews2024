@@ -6,7 +6,7 @@ const axios = require('axios')
 const cors = require('cors');
 
 app.use(cors());
-
+app.use(express.json());
 
 const connection = mysql.createConnection({
     host: process.env.MYSQL_HOST,
