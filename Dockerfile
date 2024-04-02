@@ -8,4 +8,4 @@ COPY . .
 EXPOSE 3000
 RUN chown -R node /usr/src/app
 USER node
-CMD ["node", "server.js"]
+CMD ["node", "index.js"]
